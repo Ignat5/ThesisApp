@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/drawable/background_dialog.xml" value="0.22592592592592592" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/drawable/background_dialog_users.xml" value="0.22777777777777777" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/drawable/ic_arrow_big.xml" value="0.31666666666666665" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/drawable/ic_arrow_up.xml" value="0.3117948717948718" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/drawable/ic_back.xml" value="0.32222222222222224" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/drawable/ic_check.xml" value="0.31666666666666665" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/drawable/ic_close.xml" value="0.3117948717948718" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/drawable/ic_double_arrow_black.xml" value="0.31666666666666665" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/drawable/ic_more_arrow.xml" value="0.3421875" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/drawable/ic_search_add.xml" value="0.33697916666666666" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/drawable/ic_telegram_black.xml" value="0.25" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/drawable/ic_wait.xml" value="0.2611111111111111" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/drawable/shape_button_search.xml" value="0.2324074074074074" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/dialog_change_group_name.xml" value="0.25" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/dialog_set_group.xml" value="0.33" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/dialog_users.xml" value="0.25" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/fragment_active_requests.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/fragment_add_user_from_accepted.xml" value="0.25" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/fragment_add_user_search.xml" value="0.33" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/fragment_auth.xml" value="0.21" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/fragment_auth_mvvm.xml" value="0.25" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/fragment_group_users.xml" value="0.2767210144927536" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/fragment_groups.xml" value="0.25" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/fragment_incoming_requests.xml" value="0.25" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/fragment_main.xml" value="0.25" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/fragment_map.xml" value="0.25" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/fragment_map_mvvm.xml" value="0.23867753623188406" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/fragment_my.xml" value="0.1778115501519757" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/fragment_new_asap_test.xml" value="0.26358695652173914" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/fragment_outcoming_requests.xml" value="0.30052083333333335" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/fragment_registration.xml" value="0.33" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/fragment_registration_mvvm.xml" value="0.25" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/fragment_request.xml" value="0.25" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/fragment_requests_host.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/fragment_resolved_requests.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/fragment_search.xml" value="0.14361702127659576" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/fragment_service.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/fragment_settings.xml" value="0.14361702127659576" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/fragment_start_test.xml" value="0.26358695652173914" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/fragment_street.xml" value="0.29528985507246375" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/fragment_users_host.xml" value="0.15653495440729484" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/item_accepted_user.xml" value="0.25" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/item_group.xml" value="0.3255208333333333" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/item_group_user.xml" value="0.2767210144927536" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/item_incoming_request.xml" value="0.33" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/item_outcoming_request.xml" value="0.23777173913043478" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/item_set_group.xml" value="0.25" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/item_user_map.xml" value="0.25" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/layout_bottom_sheet_users.xml" value="0.25" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/layout_drawer_header.xml" value="0.25" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/layout_toolbar.xml" value="0.24864130434782608" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/layout/layout_users_map_bottom_sheet.xml" value="0.15830800405268491" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/menu/drawer_bottom_menu.xml" value="0.24444444444444444" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/menu/drawer_menu.xml" value="0.25" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/menu/group_options.xml" value="0.25" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/menu/group_options_current.xml" value="0.26944444444444443" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/menu/group_users_menu.xml" value="0.321875" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/menu/options_menu.xml" value="0.24444444444444444" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/menu/request_incoming_accepted.xml" value="0.2958974358974359" />
+        <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/menu/request_incoming_denied_menu.xml" value="0.2958974358974359" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

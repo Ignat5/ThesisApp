@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuItemGroup"
+        android:icon="@drawable/ic_menu_groups"
+        android:title="Группы" />
+
+    <item
+        android:id="@+id/menuItemRequests"
+        android:icon="@drawable/ic_telegram_black"
+        android:title="Запросы" />
+</menu>

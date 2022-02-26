@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tlSearch"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="50dp"
+        android:hint="Email"
+        android:textColorHint="@color/black_60"
+        android:theme="@style/EditTextThemeOverlay"
+        app:boxStrokeColor="@color/dark_green"
+        app:boxStrokeWidth="3dp"
+        app:endIconDrawable="@drawable/ic_search_user"
+        app:endIconMode="custom"
+        app:helperText="Введите email пользователя"
+        app:helperTextEnabled="true"
+        app:hintTextColor="@color/black_60"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View
+        android:id="@+id/vSearchResult"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tlSearch" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_telegram"
+        app:backgroundTint="@color/dark_green"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="@id/vSearchResult"
+        app:layout_constraintEnd_toEndOf="@id/vSearchResult"
+        app:layout_constraintTop_toTopOf="@id/vSearchResult"
+        app:rippleColor="@color/transparent"
+        android:visibility="gone"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/tvSearchResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/vSearchResult"
+        app:layout_constraintEnd_toStartOf="@id/btnSend"
+        app:layout_constraintStart_toStartOf="@id/vSearchResult"
+        app:layout_constraintTop_toTopOf="@id/vSearchResult" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="Поле Email не может быть пустым"
+        android:textColor="@color/black_60"
+        app:layout_constraintEnd_toStartOf="@id/btnSend"
+        app:layout_constraintStart_toStartOf="@id/vSearchResult"
+        app:layout_constraintTop_toBottomOf="@id/tvSearchResult"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSearch"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_button_search"
+        android:enabled="false"
+        android:text="Поиск"
+        android:textColor="@color/white_60"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vSearchResult" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/progressBar"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

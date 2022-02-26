@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph">
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.mycompany.thesis1.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/authFragment2"
+        android:name="com.mycompany.thesis1.mvvm.start.AuthFragment"
+        android:label="fragment_auth_mvvm"
+        tools:layout="@layout/fragment_auth_mvvm" >
+        <action
+            android:id="@+id/action_authFragment2_to_regFragment"
+            app:destination="@id/regFragment" />
+        <action
+            android:id="@+id/action_authFragment2_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/authFragment2"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.mycompany.thesis1.mvvm.map.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main"
+        >
+        <action
+            android:id="@+id/action_mainFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_groupsFragment"
+            app:destination="@id/groupsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_requestsHostFragment"
+            app:destination="@id/requestsHostFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_authFragment2"
+            app:destination="@id/authFragment2"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/regFragment"
+        android:name="com.mycompany.thesis1.mvvm.start.RegFragment"
+        android:label="fragment_registration_mvvm"
+        tools:layout="@layout/fragment_registration_mvvm" >
+        <action
+            android:id="@+id/action_regFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupsFragment"
+        android:name="com.mycompany.thesis1.mvvm.groups.GroupsFragment"
+        android:label="GroupsFragment" >
+        <action
+            android:id="@+id/action_groupsFragment_to_groupUsersFragment"
+            app:destination="@id/groupUsersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupUsersFragment"
+        android:name="com.mycompany.thesis1.mvvm.users.GroupUsersFragment"
+        android:label="GroupUsersFragment" >
+        <argument
+            android:name="groupId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_groupUsersFragment_to_addUserHostFragment"
+            app:destination="@id/addUserHostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addUserHostFragment"
+        android:name="com.mycompany.thesis1.mvvm.users.add_user.AddUserHostFragment"
+        android:label="fragment_users_host"
+        tools:layout="@layout/fragment_users_host" >
+        <argument
+            android:name="groupId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/requestsHostFragment"
+        android:name="com.mycompany.thesis1.mvvm.requests.RequestsHostFragment"
+        android:label="fragment_requests_host"
+        tools:layout="@layout/fragment_requests_host" />
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.mycompany.thesis1.test.StartFragment"
+        android:label="StartFragment" >
+        <action
+            android:id="@+id/action_startFragment_to_newAsapFragment"
+            app:destination="@id/newAsapFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_searchFragment2"
+            app:destination="@id/searchFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/newAsapFragment"
+        android:name="com.mycompany.thesis1.test.NewAsapFragment"
+        android:label="NewAsapFragment" >
+        <argument
+            android:name="profileId"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment2"
+        android:name="com.mycompany.thesis1.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+</navigation>

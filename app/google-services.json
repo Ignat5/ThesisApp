@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1006002414440",
+    "project_id": "thesisapp1-4355f",
+    "storage_bucket": "thesisapp1-4355f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006002414440:android:212ebe669935e58cdb6cdd",
+        "android_client_info": {
+          "package_name": "com.mycompany.thesis1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1006002414440-gui3d72peqaqb1i7qk6irc4vrgr2bpgf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBhJdTFCgyy0RInTjdGiAx0AXN82Apa7Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1006002414440-gui3d72peqaqb1i7qk6irc4vrgr2bpgf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
