@@ -30,9 +30,6 @@
         tools:layout="@layout/fragment_main"
         >
         <action
-            android:id="@+id/action_mainFragment_to_settingsFragment"
-            app:destination="@id/settingsFragment" />
-        <action
             android:id="@+id/action_mainFragment_to_groupsFragment"
             app:destination="@id/groupsFragment" />
         <action
@@ -58,7 +55,8 @@
     <fragment
         android:id="@+id/groupsFragment"
         android:name="com.mycompany.thesis1.mvvm.groups.GroupsFragment"
-        android:label="GroupsFragment" >
+        android:label="GroupsFragment"
+        tools:layout="@layout/fragment_groups">
         <action
             android:id="@+id/action_groupsFragment_to_groupUsersFragment"
             app:destination="@id/groupUsersFragment" />
@@ -66,7 +64,8 @@
     <fragment
         android:id="@+id/groupUsersFragment"
         android:name="com.mycompany.thesis1.mvvm.users.GroupUsersFragment"
-        android:label="GroupUsersFragment" >
+        android:label="GroupUsersFragment"
+        tools:layout="@layout/fragment_group_users">
         <argument
             android:name="groupId"
             app:argType="string" />

@@ -2,10 +2,12 @@ package com.mycompany.thesis1.mvvm.map
 
 import android.Manifest
 import android.app.Activity
+import android.app.Service
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.location.Location
+import android.location.LocationManager
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
@@ -30,11 +32,14 @@ import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import com.google.maps.android.ui.IconGenerator
 import com.mycompany.thesis1.DrawerLocker
 import com.mycompany.thesis1.R
 import com.mycompany.thesis1.adapters.UsersMapListAdapter
+import com.mycompany.thesis1.constants.AppConstants.DEF_LATITUDE
+import com.mycompany.thesis1.constants.AppConstants.DEF_LONGITUDE
 import com.mycompany.thesis1.dialogs.SetGroupDialog
 import com.mycompany.thesis1.models.UserMap
 import com.mycompany.thesis1.mvvm.model.User
@@ -69,7 +74,11 @@ class MainFragment : Fragment(R.layout.fragment_main), OnMapReadyCallback {
         checkPermissions()
         initRecyclerView()
         hideKeyboard()
-
+        val locationManager = requireActivity().getSystemService(Service.LOCATION_SERVICE) as LocationManager
+        if(
+            !locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)
+        )
+          Snackbar.make(requireView(),"Включите GPS для корректной работы",Snackbar.LENGTH_LONG).show()
     }
 
     override fun onMapReady(p0: GoogleMap) {
@@ -121,6 +130,7 @@ class MainFragment : Fragment(R.layout.fragment_main), OnMapReadyCallback {
         llLogout.setOnClickListener {
             val firebaseAuth = FirebaseAuth.getInstance()
             firebaseAuth.signOut()
+            stopLocationService()
             val action = MainFragmentDirections.actionMainFragmentToAuthFragment2()
             findNavController().navigate(action)
         }
@@ -249,7 +259,7 @@ class MainFragment : Fragment(R.layout.fragment_main), OnMapReadyCallback {
     private fun onGetUsers(users: List<User>) {
         var profileUser: User? = null
         for (user in users) {
-            if (googleMap != null && user.latitude >= 0 && user.longitude >= 0) {
+            if (googleMap != null && user.latitude != DEF_LATITUDE && user.longitude != DEF_LONGITUDE) {
                 val markerOptions = MarkerOptions()
                 val location = LatLng(user.latitude, user.longitude)
                 markerOptions.position(location)
@@ -293,7 +303,7 @@ class MainFragment : Fragment(R.layout.fragment_main), OnMapReadyCallback {
     private fun onUpdateUsers(updatedUsers: List<User>) {
         var profileUser: User? = null
         for (user in updatedUsers) {
-            if (user.latitude >= 0 && user.longitude >= 0) {
+            if (user.latitude != DEF_LATITUDE && user.longitude != DEF_LONGITUDE) {
                 if (user.userId == viewModel.profileId) profileUser = user
                 val updatedMarker = listOfMarkers.find { it.id == user.userId }
                 if (updatedMarker != null) {
@@ -383,6 +393,13 @@ class MainFragment : Fragment(R.layout.fragment_main), OnMapReadyCallback {
         } else {
             activity?.applicationContext?.startService(intent)
         }
+    }
+
+    private fun stopLocationService() {
+        val intent = Intent(activity?.applicationContext, MyLocationService::class.java).apply {
+            action = Constants.ACTION_STOP_SERVICE
+        }
+        activity?.applicationContext?.stopService(intent)
     }
 
 

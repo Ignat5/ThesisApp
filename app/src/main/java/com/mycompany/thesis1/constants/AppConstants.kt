@@ -1,6 +1,8 @@
 package com.mycompany.thesis1.constants
 
 object AppConstants {
+    const val DEF_LATITUDE:Double = -1.0
+    const val DEF_LONGITUDE:Double = -1.0
     //Collections
     const val USERS_COLLECTION = "UsersTest"
     const val GROUPS_COLLECTION = "Groups"

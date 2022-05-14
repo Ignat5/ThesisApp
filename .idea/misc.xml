@@ -65,10 +65,11 @@
         <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/menu/options_menu.xml" value="0.24444444444444444" />
         <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/menu/request_incoming_accepted.xml" value="0.2958974358974359" />
         <entry key="..\:/Users/ignat/Desktop/i/learning/Android/ThesisApp1/app/src/main/res/menu/request_incoming_denied_menu.xml" value="0.2958974358974359" />
+        <entry key="app/src/main/res/layout/fragment_groups.xml" value="0.23550724637681159" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
